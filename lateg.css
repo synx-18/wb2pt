@@ -1,3 +1,24 @@
+:root{
+  --i: #0b0742;
+  --ii: #120c6e;
+  --iii: #5372eb;
+  --iv: #ff9190;
+  --v: #fdc094;
+}
+
+html {
+  background: linear-gradient(var(--iii), var(--iv), var(--v)) no-repeat center center fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  display: block;
+  background-color: #0b0742;
+  margin: 1%;
+}
+
 .cont {
   display: flex;
   flex-wrap: wrap;
@@ -5,15 +26,15 @@
 }
 
 .red {
-  background: linear-gradient(#0b0742, #120c6e);
+  background: linear-gradient(var(--i), var(--ii));
   border-radius: 10px;
 
   width: 400px;
-  min-width: 200px;
+  min-width: 300px;
   max-width: 400px;
 
   height: 600px;
-  min-height: 300px;
+  min-height: 450px;
   max-height: 600px;
 
   margin: 1%;
