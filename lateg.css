@@ -1,0 +1,14 @@
+.cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex: 1;
+}
+
+.red {
+  background: linear-gradient(#0b0742, #120c6e);
+  border-radius: 10px;
+  width: 400px;
+  height: 600px;
+  margin: 2%;
+}
