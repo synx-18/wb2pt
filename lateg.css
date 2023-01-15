@@ -6,6 +6,11 @@
   --v: #68C96B;
   --vi: #A9F19B;
   --vii: #F2FFF3;
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 html {
