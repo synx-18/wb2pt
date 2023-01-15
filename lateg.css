@@ -69,18 +69,32 @@ p {
 
 .cont { 
   display: flex;
+  
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   
 }
 
-.cu { width: 80%;
-  max-width: 800px;
+.cu { width: 60%;
+  max-width: 600px;
   color: var(--i);
   background-color: rgb(194, 237, 242, 0.5);
 padding: 0% 5%;
 margin: 2.5% 0% 0% 0%;
 border-radius: 64px;
+}
+
+.members {
+  width: 80%;
+  max-width: 800px;
+  color: var(--i);
+  background-color: rgb(194, 237, 242, 0.5);
+  padding: 0% 2.5%;
+  margin: 2.5% 0% 0% 0%;
+  border-radius: 64px;
+ 
 }
 
 h1 {
@@ -93,9 +107,9 @@ h1 {
 }
 
 h2 {
-  text-align: left;
+  text-align: center;
   color: var(--v);
-  background-color: var(--ii);
+  background: linear-gradient(var(--ii), var(--i));
   padding: 16px;
   width: fit-content;
   border-radius: 64px;
@@ -107,7 +121,13 @@ img {
   width: 200px;
   border-radius: 100px;
   float: right;
-  margin: 16px 0px 16px 16px;
+  margin: 0px 16px;
+  border: var(--ii) solid 5px;
 }
 
-
+.mem {
+  background-color: rgb(194, 237, 242, 0.5);
+  padding: 5%;
+  margin: 2.5%;
+  border-radius: 64px;
+}
