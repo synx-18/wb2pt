@@ -1,11 +1,9 @@
 :root{
-  --i: #0B0A2D;
-  --ii: #121B57;
-  --iii: #193A82;
-  --iv: #3DA457;
-  --v: #68C96B;
-  --vi: #A9F19B;
-  --vii: #F2FFF3;
+  --i: #0F3560;
+  --ii: #3C6385;
+  --iii: #6991A9;
+  --iv: #95BFCE;
+  --v: #C2EDF2;
   font-family: 'Inter', sans-serif;
 }
 
@@ -14,32 +12,32 @@
 }
 
 html {
-  background: linear-gradient(var(--i), var(--ii)) no-repeat center center fixed;
+  background: linear-gradient(var(--v), var(--iii)) no-repeat center center fixed;
   background-repeat: no-repeat;
   font-family: Inter, sans-serif;
 }
-
 
 .nav {
   display: flex;
   justify-content: center;
 }
+
 nav {
   text-align: center;
   position:fixed;
   top: 0;
-  background: linear-gradient(var(--iv), var(--ii));
-  border-radius: 0px 0px 10px 10px;
+  background: linear-gradient(var(--ii), var(--i));
+  border-radius: 0px 0px 64px 64px;
   padding: 24px 0%;
   margin: 0% 0% 10% 0%;
   width: 80%;
   min-width: 720px;
-  color: var(--vii);
+  color: var(--v);
 }
 
 nav a {
   display: inline-block;
-  color: var(--vii);
+  color: var(--v);
   font-size: 24px;
   margin: 8px 8px 0px 8px;
   padding: 8px;
@@ -48,7 +46,7 @@ nav a {
   font-weight: 600;
 }
 
-a:hover { color: var(--iii); background-color: var(--vii); transition: 0.25s;} 
+a:hover { color: var(--i); background-color: var(--v); transition: 0.25s;} 
 
 nav b {
   font-size: 4em;
@@ -62,7 +60,7 @@ nav b {
 
 p {
   font-size: 24px;
-  color: var(--vii);
+  color: var(--i);
   text-align: justify;
   padding: 24px 0px;
   line-height: 32px;}
@@ -71,11 +69,24 @@ p {
 .cont { 
   display: flex;
   justify-content: center;
+  
 }
 
 .cu { width: 80%;
   max-width: 1000px;
-  color: var(--vii);}
+  color: var(--i);
+  background-color: rgb(194, 237, 242, 0.5);
+padding: 0% 5%;
+margin: 2.5% 0% 0% 0%;
+border-radius: 64px;}
+
+h1 {
+  text-align: center;
+  color: var(--v);
+  background-color: var(--i);
+  padding: 8px;
+  border-radius: 64px;
+}
 
 
 
