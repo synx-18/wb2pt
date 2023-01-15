@@ -20,6 +20,7 @@ html {
 .nav {
   display: flex;
   justify-content: center;
+  
 }
 
 nav {
@@ -49,7 +50,7 @@ nav a {
 a:hover { color: var(--i); background-color: var(--v); transition: 0.25s;} 
 
 nav b {
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 900;
 }
 
@@ -62,23 +63,25 @@ p {
   font-size: 24px;
   color: var(--i);
   text-align: justify;
-  padding: 24px 0px;
+  padding: 16px 0px;
   line-height: 32px;}
 
 
 .cont { 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   
 }
 
 .cu { width: 80%;
-  max-width: 1000px;
+  max-width: 800px;
   color: var(--i);
   background-color: rgb(194, 237, 242, 0.5);
 padding: 0% 5%;
 margin: 2.5% 0% 0% 0%;
-border-radius: 64px;}
+border-radius: 64px;
+}
 
 h1 {
   text-align: center;
@@ -86,8 +89,25 @@ h1 {
   background-color: var(--i);
   padding: 8px;
   border-radius: 64px;
+  font-size: 3em;
 }
 
+h2 {
+  text-align: left;
+  color: var(--v);
+  background-color: var(--ii);
+  padding: 16px;
+  width: fit-content;
+  border-radius: 64px;
+  font-size: 2em;
 
+}
+
+img { 
+  width: 200px;
+  border-radius: 100px;
+  float: right;
+  margin: 16px 0px 16px 16px;
+}
 
 
