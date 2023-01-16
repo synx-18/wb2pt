@@ -1,0 +1,779 @@
+:root{
+  --i: #0F3560;
+  --ii: #3C6385;
+  --iii: #6991A9;
+  --iv: #95BFCE;
+  --v: #C2EDF2;
+
+  --an1: #f4f4f4;  --an2: #84616e;  --an3: #194868;
+  --sh1: #f4f4f4;  --sh2: #505153;  --sh3: #1c2127;
+  --za1: #fff2e3;  --za2: #923a3b;  --za3: #130804;
+  --ar1: #d8dee5;  --ar2: #4b696b;  --ar3: #1b3436;
+  --ca1: #d8e3f3;  --ca2: #508eb7;  --ca3: #0a3466;
+  --ch1: #eff4f5;  --ch2: #688295;  --ch3: #424651;
+  --gi1: #ffffff;  --gi2: #b5925a;  --gi3: #43485b;
+  --ju1: #f5f6f5;  --ju2: #65707a;  --ju3: #2b323c;
+  --kn1: #eae9e4;  --kn2: #608190;  --kn3: #243b49;
+  --ra1: #fefefe;  --ra2: #5b7e43;  --ra3: #26341d;
+
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+html {
+  background: linear-gradient(var(--v), var(--iii))  no-repeat center center fixed;
+  
+  
+  background-repeat: no-repeat;
+  font-family: Inter, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+nav {
+  text-align: center;
+  position:fixed;
+  top: 0;
+  background: linear-gradient(var(--ii), var(--i));
+  border-radius: 0px 0px 64px 64px;
+  padding: 24px 0%;
+  margin: 0% 0% 10% 0%;
+  width: 80%;
+  min-width: 720px;
+  color: var(--v);
+  box-shadow: 0px 8px 2em var(--i);
+}
+
+nav a {
+  display: inline-block;
+  color: var(--v);
+  font-size: 24px;
+  margin: 8px 8px 0px 8px;
+  padding: 8px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--i);
+  background-color: var(--v);
+  box-shadow: 0px 0px 8px var(--iv);
+  transition: 0.5s;
+}
+
+
+nav b {
+  font-size: 5em;
+  font-weight: 1000;
+  font-family: 'Source Code Pro', monospace;
+}
+
+nav b:hover {
+  text-shadow: 0px 0px 0.5em var(--iv);
+  cursor: default;
+  transition: 0.5s;
+}
+
+.sp {
+  display: block;
+  margin: 160px 0px;
+}
+
+p {
+  font-size: 24px;
+  color: var(--i);
+  text-align: justify;
+  padding: 16px 0px;
+  line-height: 32px;}
+
+
+.cont { 
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.cu { width: 60%;
+  max-width: 600px;
+  color: var(--i);
+  background-color: rgb(194, 237, 242, 0.5);
+padding: 0% 5%;
+margin: 2.5% 0% 0% 0%;
+border-radius: 64px;
+box-shadow: 0px 16px 16px var(--iii);
+}
+
+.members {
+  width: 80%;
+  max-width: 800px;
+  color: var(--i);
+  background-color: rgb(194, 237, 242, 0.5);
+  padding: 0% 2.5%;
+  margin: 2.5% 0% 0% 0%;
+  border-radius: 64px;
+  box-shadow: 0px 16px 16px var(--iii);
+}
+
+h1 {
+  text-align: center;
+  color: var(--v);
+  background-color: var(--i);
+  padding: 8px;
+  border-radius: 64px;
+  font-size: 3em;
+  box-shadow: 0px 8px 16px var(--ii);
+}
+
+h1:hover {
+  text-shadow: 0px 0px 0.5em var(--iv);
+  transition: 0.5s;
+}
+
+h2 {
+  text-align: center;
+  color: var(--v);
+  background: linear-gradient(var(--ii), var(--i));
+  padding: 16px;
+  width: fit-content;
+  border-radius: 64px;
+  font-size: 2em;
+
+}
+
+img { 
+  width: 200px;
+  border-radius: 200px;
+  float: right;
+  margin: 0px 16px;
+  border: var(--ii) solid 5px;
+  box-shadow: 0px 8px 16px var(--iii);
+}
+
+.mem {
+  background-color: rgba(194, 237, 242, 0.5);
+  padding: 5%;
+  margin: 5% 0%;
+  border-radius: 64px;
+}
+
+.acont {text-align: center;}
+
+
+#injel {
+  background-color: var(--an1);
+  color: var(--an3);
+  box-shadow: 0px 8px 8px var(--an2);
+}
+
+#injel p { color: var(--an3); }
+
+#injel:hover {
+  box-shadow:  0px 8px 8px var(--an2);
+  transition: 0.5s;
+}
+
+#injel h2 {
+  background: linear-gradient(var(--an2), var(--an3));
+  color: var(--an1);
+  box-shadow: 0px 8px 16px var(--an3);
+}
+
+#injel img {
+  border: var(--an3) solid 5px;
+  box-shadow: 0px 8px 8px var(--an2);
+}
+
+#injel h2:hover {
+  text-shadow: 0px 0px 16px var(--an1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#injel img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--an2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#injel a {
+  color: var(--an2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#injel a:hover {
+  color: var(--an1);
+  background: var(--an2);
+  box-shadow: 0px 8px 16px var(--an2);
+  transition: 0.5s;
+}
+
+/* PERMEMBER */
+
+
+#shy {
+  background-color: var(--sh1);
+  color: var(--sh3);
+  box-shadow: 0px 8px 8px var(--sh2);
+}
+
+#shy p { color: var(--sh3); }
+
+#shy:hover {
+  box-shadow:  0px 8px 8px var(--sh2);
+  transition: 0.5s;
+}
+
+#shy h2 {
+  background: linear-gradient(var(--sh2), var(--sh3));
+  color: var(--sh1);
+  box-shadow: 0px 8px 16px var(--sh3);
+}
+
+#shy img {
+  border: var(--sh3) solid 5px;
+  box-shadow: 0px 8px 8px var(--sh2);
+}
+
+#shy h2:hover {
+  text-shadow: 0px 0px 16px var(--sh1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#shy img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--sh2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#shy a {
+  color: var(--sh2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#shy a:hover {
+  color: var(--sh1);
+  background: var(--sh2);
+  box-shadow: 0px 8px 16px var(--sh2);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+#zai {
+  background-color: var(--za1);
+  color: var(--za3);
+  box-shadow: 0px 8px 8px var(--za2);
+}
+
+#zai p { color: var(--za3); }
+
+#zai:hover {
+  box-shadow:  0px 8px 8px var(--za2);
+  transition: 0.5s;
+}
+
+#zai h2 {
+  background: linear-gradient(var(--za2), var(--za3));
+  color: var(--za1);
+  box-shadow: 0px 8px 16px var(--za3);
+}
+
+#zai img {
+  border: var(--za3) solid 5px;
+  box-shadow: 0px 8px 8px var(--za2);
+}
+
+#zai h2:hover {
+  text-shadow: 0px 0px 16px var(--za1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#zai img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--za2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#zai a {
+  color: var(--za2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#zai a:hover {
+  color: var(--za1);
+  background: var(--za2);
+  box-shadow: 0px 8px 16px var(--za2);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+#arian {
+  background-color: var(--ar1);
+  color: var(--ar3);
+  box-shadow: 0px 8px 8px var(--ar2);
+}
+
+#arian p { color: var(--ar3); }
+
+#arian:hover {
+  box-shadow:  0px 8px 8px var(--ar2);
+  transition: 0.5s;
+}
+
+#arian h2 {
+  background: linear-gradient(var(--ar2), var(--ar3));
+  color: var(--ar1);
+  box-shadow: 0px 8px 16px var(--ar3);
+}
+
+#arian img {
+  border: var(--ar3) solid 5px;
+  box-shadow: 0px 8px 8px var(--ar2);
+}
+
+#arian h2:hover {
+  text-shadow: 0px 0px 16px var(--ar1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#arian img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--ar2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#arian a {
+  color: var(--ar2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#arian a:hover {
+  color: var(--ar1);
+  background: var(--ar2);
+  box-shadow: 0px 8px 16px var(--ar2);
+  transition: 0.5s;
+}
+
+
+
+
+
+#carlos {
+  background-color: var(--ca1);
+  color: var(--ca3);
+  box-shadow: 0px 8px 8px var(--ca2);
+}
+
+#carlos p { color: var(--ca3); }
+
+#carlos:hover {
+  box-shadow:  0px 8px 8px var(--ca2);
+  transition: 0.5s;
+}
+
+#carlos h2 {
+  background: linear-gradient(var(--ca2), var(--ca3));
+  color: var(--ca1);
+  box-shadow: 0px 8px 16px var(--ca3);
+}
+
+#carlos img {
+  border: var(--ca3) solid 5px;
+  box-shadow: 0px 8px 8px var(--ca2);
+}
+
+#carlos h2:hover {
+  text-shadow: 0px 0px 16px var(--ca1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#carlos img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--ca2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#carlos a {
+  color: var(--ca2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#carlos a:hover {
+  color: var(--ca1);
+  background: var(--ca2);
+  box-shadow: 0px 8px 16px var(--ca2);
+  transition: 0.5s;
+}
+
+
+
+
+
+#chris {
+  background-color: var(--ch1);
+  color: var(--ch3);
+  box-shadow: 0px 8px 8px var(--ch2);
+}
+
+#chris p { color: var(--ch3); }
+
+#chris:hover {
+  box-shadow:  0px 8px 8px var(--ch2);
+  transition: 0.5s;
+}
+
+#chris h2 {
+  background: linear-gradient(var(--ch2), var(--ch3));
+  color: var(--ch1);
+  box-shadow: 0px 8px 16px var(--ch3);
+}
+
+#chris img {
+  border: var(--ch3) solid 5px;
+  box-shadow: 0px 8px 8px var(--ch2);
+}
+
+#chris h2:hover {
+  text-shadow: 0px 0px 16px var(--ch1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#chris img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--ch2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#chris a {
+  color: var(--ch2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#chris a:hover {
+  color: var(--ch1);
+  background: var(--ch2);
+  box-shadow: 0px 8px 16px var(--ch2);
+  transition: 0.5s;
+}
+
+
+
+
+
+#gian {
+  background-color: var(--gi1);
+  color: var(--gi3);
+  box-shadow: 0px 8px 8px var(--gi2);
+}
+
+#gian p { color: var(--gi3); }
+
+#gian:hover {
+  box-shadow:  0px 8px 8px var(--gi2);
+  transition: 0.5s;
+}
+
+#gian h2 {
+  background: linear-gradient(var(--gi2), var(--gi3));
+  color: var(--gi1);
+  box-shadow: 0px 8px 16px var(--gi3);
+}
+
+#gian img {
+  border: var(--gi3) solid 5px;
+  box-shadow: 0px 8px 8px var(--gi2);
+}
+
+#gian h2:hover {
+  text-shadow: 0px 0px 16px var(--gi1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#gian img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--gi2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#gian a {
+  color: var(--gi2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#gian a:hover {
+  color: var(--gi1);
+  background: var(--gi2);
+  box-shadow: 0px 8px 16px var(--gi2);
+  transition: 0.5s;
+}
+
+
+
+
+
+#jul {
+  background-color: var(--ju1);
+  color: var(--ju3);
+  box-shadow: 0px 8px 8px var(--ju2);
+}
+
+#jul p { color: var(--ju3); }
+
+#jul:hover {
+  box-shadow:  0px 8px 8px var(--ju2);
+  transition: 0.5s;
+}
+
+#jul h2 {
+  background: linear-gradient(var(--ju2), var(--ju3));
+  color: var(--ju1);
+  box-shadow: 0px 8px 16px var(--ju3);
+}
+
+#jul img {
+  border: var(--ju3) solid 5px;
+  box-shadow: 0px 8px 8px var(--ju2);
+}
+
+#jul h2:hover {
+  text-shadow: 0px 0px 16px var(--ju1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#jul img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--ju2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#jul a {
+  color: var(--ju2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#jul a:hover {
+  color: var(--ju1);
+  background: var(--ju2);
+  box-shadow: 0px 8px 16px var(--ju2);
+  transition: 0.5s;
+}
+
+
+
+
+#ken {
+  background-color: var(--kn1);
+  color: var(--kn3);
+  box-shadow: 0px 8px 8px var(--kn2);
+}
+
+#ken p { color: var(--kn3); }
+
+#ken:hover {
+  box-shadow:  0px 8px 8px var(--kn2);
+  transition: 0.5s;
+}
+
+#ken h2 {
+  background: linear-gradient(var(--kn2), var(--kn3));
+  color: var(--kn1);
+  box-shadow: 0px 8px 16px var(--kn3);
+}
+
+#ken img {
+  border: var(--kn3) solid 5px;
+  box-shadow: 0px 8px 8px var(--kn2);
+}
+
+#ken h2:hover {
+  text-shadow: 0px 0px 16px var(--kn1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#ken img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--kn2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#ken a {
+  color: var(--kn2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#ken a:hover {
+  color: var(--kn1);
+  background: var(--kn2);
+  box-shadow: 0px 8px 16px var(--kn2);
+  transition: 0.5s;
+}
+
+
+
+
+#razo {
+  background-color: var(--ra1);
+  color: var(--ra3);
+  box-shadow: 0px 8px 8px var(--ra2);
+}
+
+#razo p { color: var(--ra3); }
+
+#razo:hover {
+  box-shadow:  0px 8px 8px var(--ra2);
+  transition: 0.5s;
+}
+
+#razo h2 {
+  background: linear-gradient(var(--ra2), var(--ra3));
+  color: var(--ra1);
+  box-shadow: 0px 8px 16px var(--ra3);
+}
+
+#razo img {
+  border: var(--ra3) solid 5px;
+  box-shadow: 0px 8px 8px var(--ra2);
+}
+
+#razo h2:hover {
+  text-shadow: 0px 0px 16px var(--ra1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#razo img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 32px var(--ra2);
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+
+#razo a {
+  color: var(--ra2);
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 64px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#razo a:hover {
+  color: var(--ra1);
+  background: var(--ra2);
+  box-shadow: 0px 8px 16px var(--ra2);
+  transition: 0.5s;
+}
+
+#Gallery img { 
+  float: none;
+  margin: 16px 0px;
+  width: 100%;
+}
+
+.stamp p {
+  text-align: center;
+  padding: 1em 2em;
+  color: var(--ii);
+}
+
+.stamp a, .stamp a:visited {
+  font-size: 1em;
+  padding: 12px;
+  margin: 1em;
+  font-weight: 700;
+  text-shadow: 0px 0px 8px var(--iv);
+  border-radius: 200px;
+  text-decoration: none;
+  color: var(--i);
+}
+
+.stamp a:hover {
+  background: linear-gradient(var(--ii), var(--i));
+  color: var(--v);
+  transition: 0.5s;
+  
+}
