@@ -751,6 +751,7 @@ img {
 #Gallery img { 
   float: none;
   margin: 16px 0px;
+  border-radius: 16px;
   width: 100%;
 }
 
