@@ -1,0 +1,27 @@
+.darkmode {
+    --i: #C2EDF2;
+    --ii: #95BFCE;
+    --iii: #6991A9;
+    --iv: #3C6385;
+    --v: #0F3560;
+  
+    --an1: #681932;  --an2: #616d84;  --an3: #f4f4f4;
+    --sh1: #f4f4f4;  --sh2: #505153;  --sh3: #1c2127;
+    --za1: #fff2e3;  --za2: #923a3b;  --za3: #130804;
+    --ar1: #d8dee5;  --ar2: #4b696b;  --ar3: #1b3436;
+    --ca1: #d8e3f3;  --ca2: #508eb7;  --ca3: #0a3466;
+    --ch1: #eff4f5;  --ch2: #688295;  --ch3: #424651;
+    --gi1: #ffffff;  --gi2: #b5925a;  --gi3: #43485b;
+    --ju1: #f5f6f5;  --ju2: #65707a;  --ju3: #2b323c;
+    --kn1: #eae9e4;  --kn2: #608190;  --kn3: #243b49;
+    --ra1: #fefefe;  --ra2: #5b7e43;  --ra3: #26341d;
+  }
+  
+  .html.darkmode {
+    background: linear-gradient(var(--iii), var(--v))  no-repeat center center fixed;
+  }
+  
+  .cu.darkmode, .members.darkmode{
+    background-color: #0c345f80;
+    box-shadow: 0px 16px 16px var(--v);
+  }
