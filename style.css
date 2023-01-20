@@ -24,6 +24,12 @@
   :root { font-family: 'Inter var', sans-serif; }
 }
 
+* {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+
 html {
   background: linear-gradient(var(--v), var(--iii))  no-repeat center center fixed;
   
