@@ -29,11 +29,8 @@
   scroll-behavior: smooth;
 }
 
-
-html {
+body {
   background: linear-gradient(var(--v), var(--iii))  no-repeat center center fixed;
-  
-  
   background-repeat: no-repeat;
   font-family: Inter, sans-serif;
 }
@@ -41,7 +38,6 @@ html {
 .nav {
   display: flex;
   justify-content: center;
-  
 }
 
 
@@ -57,6 +53,7 @@ nav {
   min-width: 720px;
   color: var(--v);
   box-shadow: 0px 8px 2em var(--i);
+  z-index: 100;
 }
 
 nav a {
