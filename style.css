@@ -23,10 +23,16 @@
   :root { font-family: 'Inter var', sans-serif; }
 }
 
-html {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
   background: linear-gradient(var(--v), var(--iii))  no-repeat center center fixed;
-  
-  
   background-repeat: no-repeat;
   font-family: Inter, sans-serif;
 }
@@ -34,7 +40,6 @@ html {
 .nav {
   display: flex;
   justify-content: center;
-  
 }
 
 
@@ -50,6 +55,7 @@ nav {
   min-width: 720px;
   color: var(--v);
   box-shadow: 0px 8px 2em var(--i);
+  z-index: 100;
 }
 
 nav a {
