@@ -15,10 +15,16 @@ function darkmode() { // function to run when darkmode button is pressed
 
     var f = document.getElementsByTagName("img");
 
-    for( i = 0; i < d.length; i++) {
+    for( i = 0; i < f.length; i++) {
         f[i].style.transition = "1.5s"; // all elements with image class, transition = 1.5s
     }
 
 
-
+    
 }
+
+var f = document.getElementsByTagName("img");
+
+    for( i = 0; i < f.length; i++) {
+        f[i].style.transition = "1.5s"; // all elements with image class, transition = 1.5s
+    }

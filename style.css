@@ -6,7 +6,7 @@
   --v: #C2EDF2;
 
   --an1: #f4f4f4;  --an2: #84616e;  --an3: #194868;
-  --sh1: #f4f4f4;  --sh2: #505153;  --sh3: #1c2127;
+  --sh1: #f4f4f4;  --sh2: #515151;  --sh3: #222222;
   --za1: #fff2e3;  --za2: #923a3b;  --za3: #130804;
   --ar1: #d8dee5;  --ar2: #4b696b;  --ar3: #1b3436;
   --ca1: #d8e3f3;  --ca2: #508eb7;  --ca3: #0a3466;
@@ -797,15 +797,15 @@ img {
   /** penis **/
 
   --an0: #0d131b;  --an1: #25303f;  --ann: #1B3A53;  --anx: #194868;  --an2: #b45f7e;  --an3: #f4f4f4;
-  --sh0: #0f1316;  --sh1: #27272b;  --shn: #323336;  --shx: #3d3e41;  --sh2: #999a9c;  --sh3: #f4f4f4;
+  --sh0: #0f0f0f;  --sh1: #202020;  --shn: #333333;  --shx: #3e3e3e;  --sh2: #9a9a9a;  --sh3: #f4f4f4;
   --za0: #0c0808;  --za1: #242121;  --zan: #532425;  --zax: #812728;  --za2: #c25b5d;  --za3: #fff2e4;
-  --ar0: #0f1414;  --ar1: #323c3d;  --arn: #334E50;  --arx: #335f63;  --ar2: #5fa8ad;  --ar3: #d8dee5;
-  --ca1: #d8e3f3;  --ca2: #508eb7;  --ca3: #0a3466;
-  --ch1: #eff4f5;  --ch2: #688295;  --ch3: #424651;
-  --gi1: #ffffff;  --gi2: #b5925a;  --gi3: #43485b;
-  --ju1: #f5f6f5;  --ju2: #65707a;  --ju3: #2b323c;
-  --kn1: #eae9e4;  --kn2: #608190;  --kn3: #243b49;
-  --ra1: #fefefe;  --ra2: #5b7e43;  --ra3: #26341d;
+  --ar0: #0f1414;  --ar1: #1c2020;  --arn: #33494e;  --arx: #38626d;  --ar2: #659ba8;  --ar3: #d8dee5;
+  --ca0: #0c1014;  --ca1: #131b25;  --can: #0F2846;  --cax: #0a3466;  --ca2: #3e87b8;  --ca3: #d8e3f3; 
+  --ch0: #17171a;  --ch1: #272e33;  --chn: #374148;  --chx: #46535c;  --ch2: #8da3b3;  --ch3: #eff4f5; 
+  --gi0: #18181b;  --gi1: #2c2e3a;  --gin: #36394B;  --gix: #3f445c;  --gi2: #b5925a;  --gi3: #fdfdfd;
+  --ju0: #090d11;  --ju1: #12161b;  --jun: #1F242C;  --jux: #2b323c;  --ju2: #65707a;  --ju3: #f3f3f3; 
+  --kn0: #11161a;  --kn1: #141e24;  --knn: #1E2D36;  --knx: #243b49;  --kn2: #608190;  --kn3: #eae9e4;
+  --ra0: #11130e;  --ra1: #191d16;  --ran: #344B23;  --rax: #426128;  --ra2: #97c342;  --ra3: #fefefe;
 }
 
 .darkmode .button {
@@ -1003,6 +1003,242 @@ nav.darkmode a:hover {
 
 .darkmode #arian a:hover {
   color: var(--ar3);
-  background: var(--ar2);
+  background: linear-gradient(var(--ar2), var(--arx));
   box-shadow: 0px 8px 16px var(--arn);
+}
+
+
+
+
+.darkmode #carlos {
+  background-color: var(--ca1);
+  color: var(--ca3);
+  box-shadow: 0px 8px 8px var(--ca0);
+}
+
+.darkmode #carlos p { color: var(--ca3); }
+
+.darkmode #carlos h2 {
+  background: linear-gradient(var(--ca2), var(--cax));
+  color: var(--ca3);
+  box-shadow: 0px 8px 16px var(--can);
+}
+
+.darkmode #carlos img {
+  border: var(--ca3) solid 5px;
+  box-shadow: 0px 0px 8px var(--ca2);
+}
+
+.darkmode #carlos h2:hover {
+  text-shadow: 0px 0px 16px var(--ca3);
+}
+
+.darkmode #carlos img:hover {
+  box-shadow: 0px 0px 32px var(--ca2);
+}
+
+.darkmode #carlos a {
+  color: var(--ca2);
+}
+
+.darkmode #carlos a:hover {
+  color: var(--ca3);
+  background: linear-gradient(var(--ca2), var(--cax));
+  box-shadow: 0px 8px 16px var(--can);
+}
+
+
+.darkmode #chris {
+  background-color: var(--ch1);
+  color: var(--ch3);
+  box-shadow: 0px 8px 8px var(--ch0);
+}
+
+.darkmode #chris p { color: var(--ch3); }
+
+.darkmode #chris h2 {
+  background: linear-gradient(var(--ch2), var(--chx));
+  color: var(--ch3);
+  box-shadow: 0px 8px 16px var(--chn);
+}
+
+.darkmode #chris img {
+  border: var(--ch3) solid 5px;
+  box-shadow: 0px 0px 8px var(--ch2);
+}
+
+.darkmode #chris h2:hover {
+  text-shadow: 0px 0px 16px var(--ch3);
+}
+
+.darkmode #chris img:hover {
+  box-shadow: 0px 0px 32px var(--ch2);
+}
+
+.darkmode #chris a {
+  color: var(--ch2);
+}
+
+.darkmode #chris a:hover {
+  color: var(--ch3);
+  background: linear-gradient(var(--ch2), var(--chx));
+  box-shadow: 0px 8px 16px var(--chn);
+}
+
+
+
+
+.darkmode #gian {
+  background-color: var(--gi1);
+  color: var(--gi3);
+  box-shadow: 0px 8px 8px var(--gi0);
+}
+
+.darkmode #gian p { color: var(--gi3); }
+
+.darkmode #gian h2 {
+  background: linear-gradient(var(--gi2), var(--gix));
+  color: var(--gi3);
+  box-shadow: 0px 8px 16px var(--gin);
+}
+
+.darkmode #gian img {
+  border: var(--gi3) solid 5px;
+  box-shadow: 0px 0px 8px var(--gi2);
+}
+
+.darkmode #gian h2:hover {
+  text-shadow: 0px 0px 16px var(--gi3);
+}
+
+.darkmode #gian img:hover {
+  box-shadow: 0px 0px 32px var(--gi2);
+}
+
+.darkmode #gian a {
+  color: var(--gi2);
+}
+
+.darkmode #gian a:hover {
+  color: var(--gi3);
+  background: linear-gradient(var(--gi2), var(--gix));
+  box-shadow: 0px 8px 16px var(--gin);
+}
+
+
+
+
+.darkmode #jul {
+  background-color: var(--ju1);
+  color: var(--ju3);
+  box-shadow: 0px 8px 8px var(--ju0);
+}
+
+.darkmode #jul p { color: var(--ju3); }
+
+.darkmode #jul h2 {
+  background: linear-gradient(var(--ju2), var(--jux));
+  color: var(--ju3);
+  box-shadow: 0px 8px 16px var(--jun);
+}
+
+.darkmode #jul img {
+  border: var(--ju3) solid 5px;
+  box-shadow: 0px 0px 8px var(--ju2);
+}
+
+.darkmode #jul h2:hover {
+  text-shadow: 0px 0px 16px var(--ju3);
+}
+
+.darkmode #jul img:hover {
+  box-shadow: 0px 0px 32px var(--ju2);
+}
+
+.darkmode #jul a {
+  color: var(--ju2);
+}
+
+.darkmode #jul a:hover {
+  color: var(--ju3);
+  background: linear-gradient(var(--ju2), var(--jux));
+  box-shadow: 0px 8px 16px var(--jun);
+}
+
+
+
+.darkmode #ken {
+  background-color: var(--kn1);
+  color: var(--kn3);
+  box-shadow: 0px 8px 8px var(--kn0);
+}
+
+.darkmode #ken p { color: var(--kn3); }
+
+.darkmode #ken h2 {
+  background: linear-gradient(var(--kn2), var(--knx));
+  color: var(--kn3);
+  box-shadow: 0px 8px 16px var(--knn);
+}
+
+.darkmode #ken img {
+  border: var(--kn3) solid 5px;
+  box-shadow: 0px 0px 8px var(--kn2);
+}
+
+.darkmode #ken h2:hover {
+  text-shadow: 0px 0px 16px var(--kn3);
+}
+
+.darkmode #ken img:hover {
+  box-shadow: 0px 0px 32px var(--kn2);
+}
+
+.darkmode #ken a {
+  color: var(--kn2);
+}
+
+.darkmode #ken a:hover {
+  color: var(--kn3);
+  background: linear-gradient(var(--kn2), var(--knx));
+  box-shadow: 0px 8px 16px var(--knn);
+}
+
+
+
+.darkmode #razo {
+  background-color: var(--ra1);
+  color: var(--ra3);
+  box-shadow: 0px 8px 8px var(--ra0);
+}
+
+.darkmode #razo p { color: var(--ra3); }
+
+.darkmode #razo h2 {
+  background: linear-gradient(var(--ra2), var(--rax));
+  color: var(--ra3);
+  box-shadow: 0px 8px 16px var(--ran);
+}
+
+.darkmode #razo img {
+  border: var(--ra3) solid 5px;
+  box-shadow: 0px 0px 8px var(--ra2);
+}
+
+.darkmode #razo h2:hover {
+  text-shadow: 0px 0px 16px var(--ra3);
+}
+
+.darkmode #razo img:hover {
+  box-shadow: 0px 0px 32px var(--ra2);
+}
+
+.darkmode #razo a {
+  color: var(--ra2);
+}
+
+.darkmode #razo a:hover {
+  color: var(--ra3);
+  background: linear-gradient(var(--ra2), var(--rax));
+  box-shadow: 0px 8px 16px var(--ran);
 }
