@@ -187,14 +187,16 @@ h2 {
 
 }
 
-img { 
+img, .gall .skill img { 
   width: 200px;
   border-radius: 200px;
   float: right;
   margin: 0px 16px;
   border: var(--ii) solid 5px;
-  box-shadow: 0px 8px 16px var(--iii);
+  box-shadow: 0px 0px 16px var(--iii);
 }
+
+
 
 .mem {
   background-color: var(--ih);
@@ -206,40 +208,40 @@ img {
 .acont {text-align: center;}
 
 
-#injel {
+#injel, .gall .skill#an {
   background-color: var(--an1);
   color: var(--an3);
   box-shadow: 0px 8px 8px var(--an2);
 }
 
-#injel p { color: var(--an3); }
-#injel p b { color: var(--an2); }
+#injel p, .gall .skill#an p { color: var(--an3); }
+#injel p b, .gall .skill#an b { color: var(--an2); }
 
-#injel h2 {
+#injel h2, .gall .skill#an h2 {
   background: linear-gradient(var(--an2), var(--an3));
   color: var(--an1);
   box-shadow: 0px 8px 16px var(--an3);
 }
 
-#injel img {
+#injel img, .gall .skill#an img {
   border: var(--an3) solid 5px;
-  box-shadow: 0px 8px 8px var(--an2);
+  box-shadow: 0px 0px 8px var(--an2);
   transition: 1.5s;
 }
 
-#injel h2:hover {
+#injel h2:hover, .gall .skill#an h2:hover {
   text-shadow: 0px 0px 16px var(--an1);
   cursor: pointer;
   transition: 0.5s;
 }
 
-#injel img:hover {
+#injel img:hover, .gall .skill#an img:hover {
   cursor: pointer;
   box-shadow: 0px 0px 32px var(--an2);
   transform: rotate(360deg);
 }
 
-#injel a {
+#injel a, .gall .skill#an a {
   color: var(--an2);
   padding: 8px;
   margin: 0px 8px;
@@ -250,7 +252,7 @@ img {
   transition: 0.5s;
 }
 
-#injel a:hover {
+#injel a:hover, .gall .skill#an a:hover {
   color: var(--an1);
   background: linear-gradient(var(--an2), var(--an3));
   box-shadow: 0px 8px 16px var(--an3);
@@ -277,7 +279,7 @@ img {
 
 #shy img {
   border: var(--sh3) solid 5px;
-  box-shadow: 0px 8px 8px var(--sh2);
+  box-shadow: 0px 0px 8px var(--sh2);
   transition: 1.5s;
 }
 
@@ -333,7 +335,7 @@ img {
 
 #zai img {
   border: var(--za3) solid 5px;
-  box-shadow: 0px 8px 8px var(--za2);
+  box-shadow: 0px 0px 8px var(--za2);
   transition: 1.5s;
 }
 
@@ -390,7 +392,7 @@ img {
 
 #arian img {
   border: var(--ar3) solid 5px;
-  box-shadow: 0px 8px 8px var(--ar2);
+  box-shadow: 0px 0px 8px var(--ar2);
   transition: 1.5s;
 }
 
@@ -445,7 +447,7 @@ img {
 
 #carlos img {
   border: var(--ca3) solid 5px;
-  box-shadow: 0px 8px 8px var(--ca2);
+  box-shadow: 0px 0px 8px var(--ca2);
   transition: 1.5s;
 }
 
@@ -501,7 +503,7 @@ img {
 
 #chris img {
   border: var(--ch3) solid 5px;
-  box-shadow: 0px 8px 8px var(--ch2);
+  box-shadow: 0px 0px 8px var(--ch2);
   transition: 1.5s;
 }
 
@@ -556,7 +558,7 @@ img {
 
 #gian img {
   border: var(--gi3) solid 5px;
-  box-shadow: 0px 8px 8px var(--gi2);
+  box-shadow: 0px 0px 8px var(--gi2);
   transition: 1.5s;
 }
 
@@ -611,7 +613,7 @@ img {
 
 #jul img {
   border: var(--ju3) solid 5px;
-  box-shadow: 0px 8px 8px var(--ju2);
+  box-shadow: 0px 0px 8px var(--ju2);
   transition: 1.5s;
 }
 
@@ -665,7 +667,7 @@ img {
 
 #ken img {
   border: var(--kn3) solid 5px;
-  box-shadow: 0px 8px 8px var(--kn2);
+  box-shadow: 0px 0px 8px var(--kn2);
   transition: 1.5s;
 }
 
@@ -720,7 +722,7 @@ img {
 
 #razo img {
   border: var(--ra3) solid 5px;
-  box-shadow: 0px 8px 8px var(--ra2);
+  box-shadow: 0px 0px 8px var(--ra2);
   transition: 1.5s;
 }
 
@@ -853,7 +855,7 @@ nav.darkmode a:hover {
 
 /** DARKMODE PERMEMBER **/
 
-.darkmode #injel {
+.darkmode #injel, .darkmode .gall .skill#an {
   background-color: var(--an1);
   color: var(--an3);
   box-shadow: 0px 8px 8px var(--an0);
@@ -861,13 +863,13 @@ nav.darkmode a:hover {
 
 .darkmode #injel p { color: var(--an3); }
 
-.darkmode #injel h2 {
+.darkmode #injel h2, .darkmode .gall .skill#an h2 {
   background: linear-gradient(var(--an2), var(--anx));
   color: var(--an3);
   box-shadow: 0px 8px 16px var(--ann);
 }
 
-.darkmode #injel img {
+.darkmode #injel img, .darkmode .gall .skill#an img {
   border: var(--an3) solid 5px;
   box-shadow: 0px 0px 8px var(--an2);
 }
@@ -1244,6 +1246,15 @@ nav.darkmode a:hover {
   box-shadow: 0px 8px 16px var(--ran);
 }
 
+.darkmode .stamp a:hover {
+  background: linear-gradient(var(--i), var(--ii));
+  box-shadow: 0px 8px 8px var(--vih);
+  text-shadow: none;
+  color: var(--v);
+  transition: 0.5s;
+  
+}
+
 .gallcont{
   display: flex;
   align-items: center;
@@ -1267,10 +1278,170 @@ nav.darkmode a:hover {
 }
 
 .gall img {
-  float: none;
-  margin: 16px 0px;
+  margin: 16px;
   border-radius: 16px;
   min-width: 200px;
   width: 600px;
   max-width: 800px;
 }
+
+.contag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 50px 0px;
+}
+
+.contag:hover {
+  cursor: pointer;
+}
+
+.gall .skill {
+  margin: 16px;
+  padding: 32px;
+  border-radius: 64px;
+  min-width: 200px;
+  width: 600px;
+  max-width: 800px;
+}
+
+.gall .skill .h2cont {
+display: flex;
+justify-content: center;
+padding: 0;
+margin: -16px 0px 0px 0px;
+}
+
+.gall .skill .imgcont {
+
+ float: right;
+}
+
+
+.gall .skill .contag .markcont span.imi {
+  font-size: 1.5em;
+  padding: 0.5em;
+  font-weight: 500;
+}
+
+
+.markcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.marker {
+  height:100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marval {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+position: relative;
+}
+
+.marker::before {
+  content: '';
+    position: absolute;
+    height: calc(100px * (2/3));
+    width: calc(100px * (2/3));
+    border-radius: 50%;
+}
+
+
+
+
+.gall .skill#an {
+  background-color: var(--an1);
+  color: var(--an3);
+  box-shadow: 0px 8px 8px var(--an2);
+}
+
+.gall .skill#an .marker {
+  box-shadow: 0px 0px 8px var(--an2);
+  
+}
+
+.gall .skill#an .marker#ang1 {
+  background: conic-gradient(var(--an3) calc(360deg * (0.1)), var(--an2) 0deg);
+}
+
+.gall .skill#an .marker#ang2 {
+  background: conic-gradient(var(--an3) calc(360deg * (0.2)), var(--an2) 0deg);
+}
+
+.gall .skill#an .marker#ang3 {
+  background: conic-gradient(var(--an3) calc(360deg * (0.3)), var(--an2) 0deg);
+}
+
+.gall .skill#an .marker::before {
+    background: var(--an1);
+}
+
+.gall .skill#an .marker span.marval {
+  color: var(--an3);
+}
+
+
+
+.darkmode .gall .skill#an .marker {
+  box-shadow: 0px 0px 8px var(--ann);
+  
+}
+
+.darkmode .gall .skill#an .marker#ang1 {
+  background: conic-gradient(var(--an2) calc(360deg * (0.1)), var(--anx) 0deg);
+}
+
+.darkmode .gall .skill#an .marker#ang2 {
+  background: conic-gradient(var(--an2) calc(360deg * (0.2)), var(--anx) 0deg);
+}
+
+.darkmode .gall .skill#an .marker#ang3 {
+  background: conic-gradient(var(--an2) calc(360deg * (0.3)), var(--anx) 0deg);
+}
+
+.darkmode .gall .skill#an .marker::before {
+    background: var(--an1);
+}
+
+.darkmode .gall .skill#an .marker span.marval {
+  color: var(--an3);
+}
+
+
+
+.gall .skill#sh {}
+
+
+.gall .skill#za {}
+
+
+.gall .skill#ar {}
+
+
+.gall .skill#ca {}
+
+
+.gall .skill#ch {}
+
+
+.gall .skill#gi {}
+
+
+.gall .skill#ju {}
+
+
+.gall .skill#kn {}
+
+
+.gall .skill#ra {}
