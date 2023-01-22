@@ -6,7 +6,7 @@
   --v: #C2EDF2;
   --ih: rgb(194, 237, 242, 0.5);
 
-  --rad: 32px;
+  --rad: 16px;
 
   --an1: #f4f4f4;  --an2: #84616e;  --an3: #194868;  --anb: #BCABB1;
   --sh1: #f4f4f4;  --sh2: #515151;  --sh3: #222222;  --shb: #A3A3A3;
@@ -17,7 +17,7 @@
   --gi1: #ffffff;  --gi2: #b5925a;  --gi3: #43485b;  --gib: #DAC9AD;
   --ju1: #f5f6f5;  --ju2: #65707a;  --ju3: #2b323c;  --jub: #ADB3B8;
   --kn1: #eae9e4;  --kn2: #608190;  --kn3: #243b49;  --knb: #A5B5BA;
-  --ra1: #fefefe;  --ra2: #5b7e43;  --ra3: #26341d;  --feb: #ADBEA1;
+  --ra1: #fefefe;  --ra2: #5b7e43;  --ra3: #26341d;  --rab: #ADBEA1;
 
   font-family: 'Inter', sans-serif;
 }
@@ -100,6 +100,15 @@ nav b:hover {
   transition: 0.5s;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48;
+  transform: translateY(4px);
+}
+
 .sp {
   display: block;
   margin: 160px 0px;
@@ -120,9 +129,13 @@ p {
   margin: 0% 1%;
   color: var(--v);
   padding: 1em;
-  font-size: 20px;
+  font-size: 12px;
   cursor: pointer;
   box-shadow: 0px 8px 1em var(--i);
+}
+
+.button span {
+  transform: translateY(2px);
 }
 
 .button:hover {
@@ -219,6 +232,20 @@ img, .gall .skill img {
 
 .acont {text-align: center;}
 
+.mem img, .gall .skill img {
+  transition: 1.5s;
+}
+
+
+.mem img:hover, .gall .skill img:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.mem h2:hover, .gall .skill h2:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
 
 #injel, .gall .skill#an {
   background-color: var(--an1);
@@ -238,19 +265,14 @@ img, .gall .skill img {
 #injel img, .gall .skill#an img {
   border: var(--an3) solid 5px;
   box-shadow: 0px 0px 8px var(--an2);
-  transition: 1.5s;
 }
 
 #injel h2:hover, .gall .skill#an h2:hover {
   text-shadow: 0px 0px 16px var(--an1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #injel img:hover, .gall .skill#an img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--an2);
-  transform: rotate(360deg);
 }
 
 #injel a, .gall .skill#an a {
@@ -285,19 +307,14 @@ img, .gall .skill img {
 #shy img, .gall .skill#sh img {
   border: var(--sh3) solid 5px;
   box-shadow: 0px 0px 8px var(--sh2);
-  transition: 1.5s;
 }
 
 #shy h2:hover, .gall .skill#sh h2:hover {
   text-shadow: 0px 0px 16px var(--sh1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #shy img:hover, .gall .skill#sh img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--sh2);
-  transform: rotate(360deg);
 }
 
 #shy a, .gall .skill#sh a {
@@ -334,19 +351,14 @@ img, .gall .skill img {
 #zai img, .gall .skill#za img {
   border: var(--za3) solid 5px;
   box-shadow: 0px 0px 8px var(--za2);
-  transition: 1.5s;
 }
 
 #zai h2:hover, .gall .skill#za h2:hover {
   text-shadow: 0px 0px 16px var(--za1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
-#zai img:hover, .gall .skill#za {
-  cursor: pointer;
+#zai img:hover, .gall .skill#za img:hover {
   box-shadow: 0px 0px 32px var(--za2);
-  transform: rotate(360deg);
 }
 
 #zai a, .gall .skill#za a {
@@ -384,19 +396,14 @@ img, .gall .skill img {
 #arian img, .gall .skill#ar img {
   border: var(--ar3) solid 5px;
   box-shadow: 0px 0px 8px var(--ar2);
-  transition: 1.5s;
 }
 
 #arian h2:hover, .gall .skill#ar h2:hover {
   text-shadow: 0px 0px 16px var(--ar1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #arian img:hover, .gall .skill#ar img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--ar2);
-  transform: rotate(360deg);
 }
 
 #arian a, .gall .skill#ar a {
@@ -432,19 +439,14 @@ img, .gall .skill img {
 #carlos img, .gall .skill#ca img {
   border: var(--ca3) solid 5px;
   box-shadow: 0px 0px 8px var(--ca2);
-  transition: 1.5s;
 }
 
 #carlos h2:hover, .gall .skill#ca h2:hover {
   text-shadow: 0px 0px 16px var(--ca1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #carlos img:hover, .gall .skill#ca img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--ca2);
-  transform: rotate(360deg);
 }
 
 #carlos a, .gall .skill#ca a {
@@ -482,19 +484,14 @@ img, .gall .skill img {
 #chris img, .gall .skill#ch img {
   border: var(--ch3) solid 5px;
   box-shadow: 0px 0px 8px var(--ch2);
-  transition: 1.5s;
 }
 
 #chris h2:hover, .gall .skill#ch h2:hover {
   text-shadow: 0px 0px 16px var(--ch1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #chris img:hover, .gall .skill#ch img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--ch2);
-  transform: rotate(360deg);
 }
 
 #chris a, .gall .skill#ch a {
@@ -530,19 +527,14 @@ img, .gall .skill img {
 #gian img, .gall .skill#gi img {
   border: var(--gi3) solid 5px;
   box-shadow: 0px 0px 8px var(--gi2);
-  transition: 1.5s;
 }
 
 #gian h2:hover, .gall .skill#gi h2:hover {
   text-shadow: 0px 0px 16px var(--gi1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #gian img:hover, .gall .skill#gi img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--gi2);
-  transform: rotate(360deg);
 }
 
 #gian a, .gall .skill#gi a {
@@ -578,19 +570,14 @@ img, .gall .skill img {
 #jul img, .gall .skill#ju img {
   border: var(--ju3) solid 5px;
   box-shadow: 0px 0px 8px var(--ju2);
-  transition: 1.5s;
 }
 
 #jul h2:hover, .gall .skill#ju h2:hover {
   text-shadow: 0px 0px 16px var(--ju1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #jul img:hover, .gall .skill#ju img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--ju2);
-  transform: rotate(360deg);
 }
 
 #jul a, .gall .skill#ju a {
@@ -625,19 +612,14 @@ img, .gall .skill img {
 #ken img, .gall .skill#kn img {
   border: var(--kn3) solid 5px;
   box-shadow: 0px 0px 8px var(--kn2);
-  transition: 1.5s;
 }
 
 #ken h2:hover, .gall .skill#kn h2:hover {
   text-shadow: 0px 0px 16px var(--kn1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #ken img:hover, .gall .skill#kn img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--kn2);
-  transform: rotate(360deg);
 }
 
 #ken a, .gall .skill#kn a {
@@ -673,19 +655,14 @@ img, .gall .skill img {
 #razo img, .gall .skill#ra img {
   border: var(--ra3) solid 5px;
   box-shadow: 0px 0px 8px var(--ra2);
-  transition: 1.5s;
 }
 
 #razo h2:hover, .gall .skill#ra h2:hover {
   text-shadow: 0px 0px 16px var(--ra1);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 #razo img:hover, .gall .skill#ra img:hover {
-  cursor: pointer;
   box-shadow: 0px 0px 32px var(--ra2);
-  transform: rotate(360deg);
 }
 
 #razo a, .gall .skill#ra a {
@@ -757,12 +734,6 @@ img, .gall .skill img {
   --ra0: #11130e;  --ra1: #1b1d1a;  --ran: #344B23;  --rax: #426128;  --ra2: #97c342;  --ra3: #fefefe;
 }
 
-.darkmode .button {
-  background: linear-gradient(var(--i), var(--ii));
-  -webkit-text-stroke-color: 4px;
-  -webkit-text-stroke-color: var(--vi);
-}
-
 html.darkmode {
   background: linear-gradient(var(--iv), var(--vi))  no-repeat center center fixed;
 }
@@ -775,7 +746,13 @@ nav.darkmode {
 
 .darkmode .button {
   background: linear-gradient(var(--v), var(--vii));
+  color: var(--i);
   box-shadow: 0px 8px 1em var(--vi);
+  
+}
+
+.darkmode .button:hover {
+  text-shadow: 0px 0px 16px var(--i);
 }
 
 nav.darkmode a {
@@ -786,6 +763,10 @@ nav.darkmode a:hover {
   color: var(--v);
   background-color: var(--i);
   box-shadow: 0px 0px 8px var(--ii);
+}
+
+nav.darkmode b:hover {
+  text-shadow: 0px 0px 0.5em var(--ii);
 }
 
 .darkmode h1 {
@@ -1219,7 +1200,7 @@ nav.darkmode a:hover {
 
   background-color: var(--ih);
   padding: 1%;
-  border-radius: 64px;
+  border-radius: var(--rad);
   box-shadow: 0px 16px 16px var(--iii);
 }
 
@@ -1246,7 +1227,7 @@ nav.darkmode a:hover {
 .gall .skill {
   margin: 16px;
   padding: 32px;
-  border-radius: 64px;
+  border-radius: var(--rad);
   min-width: 200px;
   width: 600px;
   max-width: 800px;
@@ -1286,6 +1267,7 @@ margin: -16px 0px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
 }
 
 .marval {
@@ -1293,6 +1275,7 @@ margin: -16px 0px 0px 0px;
   font-weight: 700;
   text-align: center;
 position: relative;
+transition: 0.5s;
 }
 
 .marker::before {
@@ -1301,6 +1284,7 @@ position: relative;
     height: calc(100px * (2/3));
     width: calc(100px * (2/3));
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 
@@ -1313,20 +1297,27 @@ position: relative;
 }
 
 .gall .skill#an .marker {
-  box-shadow: 0px 0px 8px var(--an2);
-  
+  box-shadow: 0px 0px 8px var(--anb);
+}
+
+.gall .skill#an .marker:hover {
+  box-shadow: 0px 0px 16px var(--anb);
+}
+
+.gall .skill#an .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--anb);
 }
 
 .gall .skill#an .marker#ang1 {
-  background: conic-gradient(var(--an3) calc(360deg * (0.1)), var(--anb) 0deg);
-}
-
-.gall .skill#an .marker#ang2 {
   background: conic-gradient(var(--an3) calc(360deg * (0.2)), var(--anb) 0deg);
 }
 
-.gall .skill#an .marker#ang3 {
+.gall .skill#an .marker#ang2 {
   background: conic-gradient(var(--an3) calc(360deg * (0.3)), var(--anb) 0deg);
+}
+
+.gall .skill#an .marker#ang3 {
+  background: conic-gradient(var(--an3) calc(360deg * (0.05)), var(--anb) 0deg);
 }
 
 .gall .skill#an .marker::before {
@@ -1340,20 +1331,27 @@ position: relative;
 
 
 .darkmode .gall .skill#an .marker {
-  box-shadow: 0px 0px 8px var(--ann);
-  
+  box-shadow: 0px 0px 8px var(--anx);
+}
+
+.darkmode .gall .skill#an .marker:hover {
+  box-shadow: 0px 0px 16px var(--anx);
+}
+
+.darkmode .gall .skill#an .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--anx);
 }
 
 .darkmode .gall .skill#an .marker#ang1 {
-  background: conic-gradient(var(--an2) calc(360deg * (0.1)), var(--anx) 0deg);
-}
-
-.darkmode .gall .skill#an .marker#ang2 {
   background: conic-gradient(var(--an2) calc(360deg * (0.2)), var(--anx) 0deg);
 }
 
-.darkmode .gall .skill#an .marker#ang3 {
+.darkmode .gall .skill#an .marker#ang2 {
   background: conic-gradient(var(--an2) calc(360deg * (0.3)), var(--anx) 0deg);
+}
+
+.darkmode .gall .skill#an .marker#ang3 {
+  background: conic-gradient(var(--an2) calc(360deg * (0.05)), var(--anx) 0deg);
 }
 
 .darkmode .gall .skill#an .marker::before {
@@ -1373,8 +1371,7 @@ position: relative;
 }
 
 .gall .skill#sh .marker {
-  box-shadow: 0px 0px 8px var(--sh2);
-  
+  box-shadow: 0px 0px 8px var(--shb);
 }
 
 .gall .skill#sh .marker#shg1 {
@@ -1396,6 +1393,15 @@ position: relative;
 .gall .skill#sh .marker span.marval {
   color: var(--sh3);
 }
+
+.gall .skill#sh .marker:hover {
+  box-shadow: 0px 0px 16px var(--shb);
+}
+
+.gall .skill#sh .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--shb);
+}
+
 
 
 
@@ -1424,6 +1430,13 @@ position: relative;
   color: var(--sh3);
 }
 
+.darkmode .gall .skill#sh .marker:hover {
+  box-shadow: 0px 0px 16px var(--shx);
+}
+
+.darkmode .gall .skill#sh .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--shx);
+}
 
 
 
@@ -1434,20 +1447,20 @@ position: relative;
 }
 
 .gall .skill#za .marker {
-  box-shadow: 0px 0px 8px var(--za2);
+  box-shadow: 0px 0px 8px var(--zab);
   
 }
 
 .gall .skill#za .marker#zag1 {
-  background: conic-gradient(var(--za3) calc(360deg * (0.68)), var(--zab) 0deg);
+  background: conic-gradient(var(--za3) calc(360deg * (0.2)), var(--zab) 0deg);
 }
 
 .gall .skill#za .marker#zag2 {
-  background: conic-gradient(var(--za3) calc(360deg * (0.6)), var(--zab) 0deg);
+  background: conic-gradient(var(--za3) calc(360deg * (0.3)), var(--zab) 0deg);
 }
 
 .gall .skill#za .marker#zag3 {
-  background: conic-gradient(var(--za3) calc(360deg * (0.3)), var(--zab) 0deg);
+  background: conic-gradient(var(--za3) calc(360deg * (0.05)), var(--zab) 0deg);
 }
 
 .gall .skill#za .marker::before {
@@ -1458,6 +1471,14 @@ position: relative;
   color: var(--za3);
 }
 
+.gall .skill#za .marker:hover {
+  box-shadow: 0px 0px 16px var(--zab);
+}
+
+.gall .skill#za .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--zab);
+}
+
 
 
 .darkmode .gall .skill#za .marker {
@@ -1466,15 +1487,15 @@ position: relative;
 }
 
 .darkmode .gall .skill#za .marker#zag1 {
-  background: conic-gradient(var(--za2) calc(360deg * (0.68)), var(--zax) 0deg);
+  background: conic-gradient(var(--za2) calc(360deg * (0.2)), var(--zax) 0deg);
 }
 
 .darkmode .gall .skill#za .marker#zag2 {
-  background: conic-gradient(var(--za2) calc(360deg * (0.6)), var(--zax) 0deg);
+  background: conic-gradient(var(--za2) calc(360deg * (0.3)), var(--zax) 0deg);
 }
 
 .darkmode .gall .skill#za .marker#zag3 {
-  background: conic-gradient(var(--za2) calc(360deg * (0.3)), var(--zax) 0deg);
+  background: conic-gradient(var(--za2) calc(360deg * (0.0.5)), var(--zax) 0deg);
 }
 
 .darkmode .gall .skill#za .marker::before {
@@ -1484,3 +1505,547 @@ position: relative;
 .darkmode .gall .skill#za .marker span.marval {
   color: var(--za3);
 }
+
+.darkmode .gall .skill#za .marker:hover {
+  box-shadow: 0px 0px 16px var(--zax);
+}
+
+.darkmode .gall .skill#za .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--zax);
+}
+
+
+
+.gall .skill#ar {
+  background-color: var(--ar1);
+  color: var(--ar3);
+  box-shadow: 0px 8px 8px var(--ar2);
+}
+
+.gall .skill#ar .marker {
+  box-shadow: 0px 0px 8px var(--arb);
+  
+}
+
+.gall .skill#ar .marker#arg1 {
+  background: conic-gradient(var(--ar3) calc(360deg * (0.8)), var(--arb) 0deg);
+}
+
+.gall .skill#ar .marker#arg2 {
+  background: conic-gradient(var(--ar3) calc(360deg * (0.7)), var(--arb) 0deg);
+}
+
+.gall .skill#ar .marker#arg3 {
+  background: conic-gradient(var(--ar3) calc(360deg * (0.1)), var(--arb) 0deg);
+}
+
+.gall .skill#ar .marker::before {
+    background: var(--ar1);
+}
+
+.gall .skill#ar .marker span.marval {
+  color: var(--ar3);
+}
+
+.gall .skill#ar .marker:hover {
+  box-shadow: 0px 0px 16px var(--arb);
+}
+
+.gall .skill#ar .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--arb);
+}
+
+
+
+.darkmode .gall .skill#ar .marker {
+  box-shadow: 0px 0px 8px var(--arn);
+  
+}
+
+.darkmode .gall .skill#ar .marker#arg1 {
+  background: conic-gradient(var(--ar2) calc(360deg * (0.8)), var(--arx) 0deg);
+}
+
+.darkmode .gall .skill#ar .marker#arg2 {
+  background: conic-gradient(var(--ar2) calc(360deg * (0.7)), var(--arx) 0deg);
+}
+
+.darkmode .gall .skill#ar .marker#arg3 {
+  background: conic-gradient(var(--ar2) calc(360deg * (0.1)), var(--arx) 0deg);
+}
+
+.darkmode .gall .skill#ar .marker::before {
+    background: var(--ar1);
+}
+
+.darkmode .gall .skill#ar .marker span.marval {
+  color: var(--ar3);
+}
+
+.darkmode .gall .skill#ar .marker:hover {
+  box-shadow: 0px 0px 16px var(--arx);
+}
+
+.darkmode .gall .skill#ar .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--arx);
+}
+
+
+
+.gall .skill#ca {
+  background-color: var(--ca1);
+  color: var(--ca3);
+  box-shadow: 0px 8px 8px var(--ca2);
+}
+
+.gall .skill#ca .marker {
+  box-shadow: 0px 0px 8px var(--cab);
+  
+}
+
+.gall .skill#ca .marker#cag1 {
+  background: conic-gradient(var(--ca3) calc(360deg * (0.5)), var(--cab) 0deg);
+}
+
+.gall .skill#ca .marker#cag2 {
+  background: conic-gradient(var(--ca3) calc(360deg * (0.7)), var(--cab) 0deg);
+}
+
+.gall .skill#ca .marker#cag3 {
+  background: conic-gradient(var(--ca3) calc(360deg * (0.3)), var(--cab) 0deg);
+}
+
+.gall .skill#ca .marker::before {
+    background: var(--ca1);
+}
+
+.gall .skill#ca .marker span.marval {
+  color: var(--ca3);
+}
+
+.gall .skill#ca .marker:hover {
+  box-shadow: 0px 0px 16px var(--cab);
+}
+
+.gall .skill#ca .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--cab);
+}
+
+
+
+.darkmode .gall .skill#ca .marker {
+  box-shadow: 0px 0px 8px var(--can);
+  
+}
+
+.darkmode .gall .skill#ca .marker#cag1 {
+  background: conic-gradient(var(--ca2) calc(360deg * (0.5)), var(--cax) 0deg);
+}
+
+.darkmode .gall .skill#ca .marker#cag2 {
+  background: conic-gradient(var(--ca2) calc(360deg * (0.7)), var(--cax) 0deg);
+}
+
+.darkmode .gall .skill#ca .marker#cag3 {
+  background: conic-gradient(var(--ca2) calc(360deg * (0.3)), var(--cax) 0deg);
+}
+
+.darkmode .gall .skill#ca .marker::before {
+    background: var(--ca1);
+}
+
+.darkmode .gall .skill#ca .marker span.marval {
+  color: var(--ca3);
+}
+
+.darkmode .gall .skill#ca .marker:hover {
+  box-shadow: 0px 0px 16px var(--cab);
+}
+
+.darkmode .gall .skill#ca .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--cab);
+}
+
+
+.gall .skill#ch {
+  background-color: var(--ch1);
+  color: var(--ch3);
+  box-shadow: 0px 8px 8px var(--ch2);
+}
+
+.gall .skill#ch .marker {
+  box-shadow: 0px 0px 8px var(--chb);
+  
+}
+
+.gall .skill#ch .marker#chg1 {
+  background: conic-gradient(var(--ch3) calc(360deg * (0.2)), var(--chb) 0deg);
+}
+
+.gall .skill#ch .marker#chg2 {
+  background: conic-gradient(var(--ch3) calc(360deg * (0.1)), var(--chb) 0deg);
+}
+
+.gall .skill#ch .marker#chg3 {
+  background: conic-gradient(var(--ch3) calc(360deg * (0.05)), var(--chb) 0deg);
+}
+
+.gall .skill#ch .marker::before {
+    background: var(--ch1);
+}
+
+.gall .skill#ch .marker span.marval {
+  color: var(--ch3);
+}
+
+.gall .skill#ch .marker:hover {
+  box-shadow: 0px 0px 16px var(--chb);
+}
+
+.gall .skill#ch .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--chb);
+}
+
+
+.darkmode .gall .skill#ch .marker {
+  box-shadow: 0px 0px 8px var(--chn);
+  
+}
+
+.darkmode .gall .skill#ch .marker#chg1 {
+  background: conic-gradient(var(--ch2) calc(360deg * (0.2)), var(--chx) 0deg);
+}
+
+.darkmode .gall .skill#ch .marker#chg2 {
+  background: conic-gradient(var(--ch2) calc(360deg * (0.1)), var(--chx) 0deg);
+}
+
+.darkmode .gall .skill#ch .marker#chg3 {
+  background: conic-gradient(var(--ch2) calc(360deg * (0.05)), var(--chx) 0deg);
+}
+
+.darkmode .gall .skill#ch .marker::before {
+    background: var(--ch1);
+}
+
+.darkmode .gall .skill#ch .marker span.marval {
+  color: var(--ch3);
+}
+
+.darkmode .gall .skill#ch .marker:hover {
+  box-shadow: 0px 0px 16px var(--chx);
+}
+
+.darkmode .gall .skill#ch .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--chx);
+}
+
+
+
+.gall .skill#gi {
+  background-color: var(--gi1);
+  color: var(--gi3);
+  box-shadow: 0px 8px 8px var(--gi2);
+}
+
+.gall .skill#gi .marker {
+  box-shadow: 0px 0px 8px var(--gib);
+  
+}
+
+.gall .skill#gi .marker#gig1 {
+  background: conic-gradient(var(--gi3) calc(360deg * (0.4)), var(--gib) 0deg);
+}
+
+.gall .skill#gi .marker#gig2 {
+  background: conic-gradient(var(--gi3) calc(360deg * (0.4)), var(--gib) 0deg);
+}
+
+.gall .skill#gi .marker#gig3 {
+  background: conic-gradient(var(--gi3) calc(360deg * (0.05)), var(--gib) 0deg);
+}
+
+.gall .skill#gi .marker::before {
+    background: var(--gi1);
+}
+
+.gall .skill#gi .marker span.marval {
+  color: var(--gi3);
+}
+
+.gall .skill#gi .marker:hover {
+  box-shadow: 0px 0px 16px var(--gib);
+}
+
+.gall .skill#gi .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--gib);
+}
+
+
+
+
+.darkmode .gall .skill#gi .marker {
+  box-shadow: 0px 0px 8px var(--gin);
+  
+}
+
+.darkmode .gall .skill#gi .marker#gig1 {
+  background: conic-gradient(var(--gi2) calc(360deg * (0.4)), var(--gix) 0deg);
+}
+
+.darkmode .gall .skill#gi .marker#gig2 {
+  background: conic-gradient(var(--gi2) calc(360deg * (0.4)), var(--gix) 0deg);
+}
+
+.darkmode .gall .skill#gi .marker#gig3 {
+  background: conic-gradient(var(--gi2) calc(360deg * (0.05)), var(--gix) 0deg);
+}
+
+.darkmode .gall .skill#gi .marker::before {
+    background: var(--gi1);
+}
+
+.darkmode .gall .skill#gi .marker span.marval {
+  color: var(--gi3);
+}
+
+.darkmode .gall .skill#gi .marker:hover {
+  box-shadow: 0px 0px 16px var(--gix);
+}
+
+.darkmode .gall .skill#gi .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--gix);
+}
+
+
+
+.gall .skill#ju {
+  background-color: var(--ju1);
+  color: var(--ju3);
+  box-shadow: 0px 8px 8px var(--ju2);
+}
+
+.gall .skill#ju .marker {
+  box-shadow: 0px 0px 8px var(--jub);
+  
+}
+
+.gall .skill#ju .marker#jug1 {
+  background: conic-gradient(var(--ju3) calc(360deg * (0.1)), var(--jub) 0deg);
+}
+
+.gall .skill#ju .marker#jug2 {
+  background: conic-gradient(var(--ju3) calc(360deg * (0.1)), var(--jub) 0deg);
+}
+
+.gall .skill#ju .marker#jug3 {
+  background: conic-gradient(var(--ju3) calc(360deg * (0.05)), var(--jub) 0deg);
+}
+
+.gall .skill#ju .marker::before {
+    background: var(--ju1);
+}
+
+.gall .skill#ju .marker span.marval {
+  color: var(--ju3);
+}
+
+.gall .skill#ju .marker:hover {
+  box-shadow: 0px 0px 16px var(--jub);
+}
+
+.gall .skill#ju .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--jub);
+}
+
+
+.darkmode .gall .skill#ju .marker {
+  box-shadow: 0px 0px 8px var(--jun);
+  
+}
+
+.darkmode .gall .skill#ju .marker#jug1 {
+  background: conic-gradient(var(--ju2) calc(360deg * (0.1)), var(--jux) 0deg);
+}
+
+.darkmode .gall .skill#ju .marker#jug2 {
+  background: conic-gradient(var(--ju2) calc(360deg * (0.1)), var(--jux) 0deg);
+}
+
+.darkmode .gall .skill#ju .marker#jug3 {
+  background: conic-gradient(var(--ju2) calc(360deg * (0.05)), var(--jux) 0deg);
+}
+
+.darkmode .gall .skill#ju .marker::before {
+    background: var(--ju1);
+}
+
+.darkmode .gall .skill#ju .marker span.marval {
+  color: var(--ju3);
+}
+
+.darkmode .gall .skill#ju .marker:hover {
+  box-shadow: 0px 0px 16px var(--jux);
+}
+
+.darkmode .gall .skill#ju .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--jux);
+}
+
+
+
+.gall .skill#kn {
+  background-color: var(--kn1);
+  color: var(--kn3);
+  box-shadow: 0px 8px 8px var(--kn2);
+}
+
+.gall .skill#kn .marker {
+  box-shadow: 0px 0px 8px var(--knb);
+  
+}
+
+.gall .skill#kn .marker#kng1 {
+  background: conic-gradient(var(--kn3) calc(360deg * (0.2)), var(--knb) 0deg);
+}
+
+.gall .skill#kn .marker#kng2 {
+  background: conic-gradient(var(--kn3) calc(360deg * (0.3)), var(--knb) 0deg);
+}
+
+.gall .skill#kn .marker#kng3 {
+  background: conic-gradient(var(--kn3) calc(360deg * (0.05)), var(--knb) 0deg);
+}
+
+.gall .skill#kn .marker::before {
+    background: var(--kn1);
+}
+
+.gall .skill#kn .marker span.marval {
+  color: var(--kn3);
+}
+
+.gall .skill#kn .marker:hover {
+  box-shadow: 0px 0px 16px var(--knb);
+}
+
+.gall .skill#kn .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--knb);
+}
+
+
+
+.darkmode .gall .skill#kn .marker {
+  box-shadow: 0px 0px 8px var(--knn);
+  
+}
+
+.darkmode .gall .skill#kn .marker#kng1 {
+  background: conic-gradient(var(--kn2) calc(360deg * (0.2)), var(--knx) 0deg);
+}
+
+.darkmode .gall .skill#kn .marker#kng2 {
+  background: conic-gradient(var(--kn2) calc(360deg * (0.3)), var(--knx) 0deg);
+}
+
+.darkmode .gall .skill#kn .marker#kng3 {
+  background: conic-gradient(var(--kn2) calc(360deg * (0.05)), var(--knx) 0deg);
+}
+
+.darkmode .gall .skill#kn .marker::before {
+    background: var(--kn1);
+}
+
+.darkmode .gall .skill#kn .marker span.marval {
+  color: var(--kn3);
+}
+
+.darkmode .gall .skill#kn .marker:hover {
+  box-shadow: 0px 0px 16px var(--knx);
+}
+
+.darkmode .gall .skill#kn .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--knx);
+}
+
+
+
+
+
+.gall .skill#ra {
+  background-color: var(--ra1);
+  color: var(--ra3);
+  box-shadow: 0px 8px 8px var(--ra2);
+}
+
+.gall .skill#ra .marker {
+  box-shadow: 0px 0px 8px var(--rab);
+  
+}
+
+.gall .skill#ra .marker#rag1 {
+  background: conic-gradient(var(--ra3) calc(360deg * (0.3)), var(--rab) 0deg);
+}
+
+.gall .skill#ra .marker#rag2 {
+  background: conic-gradient(var(--ra3) calc(360deg * (0.3)), var(--rab) 0deg);
+}
+
+.gall .skill#ra .marker#rag3 {
+  background: conic-gradient(var(--ra3) calc(360deg * (0.05)), var(--rab) 0deg);
+}
+
+.gall .skill#ra .marker::before {
+    background: var(--ra1);
+}
+
+.gall .skill#ra .marker span.marval {
+  color: var(--ra3);
+}
+
+.gall .skill#ra .marker:hover {
+  box-shadow: 0px 0px 16px var(--rab);
+}
+
+.gall .skill#ra .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--rab);
+}
+
+
+
+
+.darkmode .gall .skill#ra .marker {
+  box-shadow: 0px 0px 8px var(--ran);
+  
+}
+
+.darkmode .gall .skill#ra .marker#rag1 {
+  background: conic-gradient(var(--ra2) calc(360deg * (0.30)), var(--rax) 0deg);
+}
+
+.darkmode .gall .skill#ra .marker#rag2 {
+  background: conic-gradient(var(--ra2) calc(360deg * (0.3)), var(--rax) 0deg);
+}
+
+.darkmode .gall .skill#ra .marker#rag3 {
+  background: conic-gradient(var(--ra2) calc(360deg * (0.05)), var(--rax) 0deg);
+}
+
+.darkmode .gall .skill#ra .marker::before {
+    background: var(--ra1);
+}
+
+.darkmode .gall .skill#ra .marker span.marval {
+  color: var(--ra3);
+}
+
+.darkmode .gall .skill#ra .marker:hover {
+  box-shadow: 0px 0px 16px var(--rax);
+}
+
+.darkmode .gall .skill#ra .marker:hover::before {
+  box-shadow: inset 0px 0px 16px var(--rax);
+}
+
+
+
